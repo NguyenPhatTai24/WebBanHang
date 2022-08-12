@@ -1,0 +1,673 @@
+@charset "utf-8";
+html,body{
+    margin: 0;
+}
+body{
+    background-color: silver;
+}
+#NPT
+{
+    font-family: 'Times New Roman', Times, serif;
+}
+.header {
+    float: left;
+    width: 100%;
+    height: 20vh;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+}
+#logo{
+    float: left;
+    width: 20vh;
+    height: 18vh;
+    background-image: url(image//header.png);
+    background-size: 20vh 18vh;
+    background-repeat: no-repeat;
+    margin :10px 10px 10px 200px;
+}
+#bordersearch
+{
+    float: left;
+    width: 40%;
+    height: 50px;
+    margin :60px 50px 10px 100px;
+    background-color: white;
+    border:none;
+    border-radius: 3px;
+}
+#search
+{
+    float: left;
+    font-size: 20px;   
+    width: 90%;
+    height: 45px;
+    border: none;
+    outline: none;
+    margin-left: 3px;
+    border-radius: 3px;
+    display: block;
+}
+#button
+{
+    float:right;
+    margin-left: 5px;
+    width: 8%;
+    height: 95%;
+    background-color:black;
+    border-radius: 3px;
+    margin: 1px;
+    border: none;
+    display: block;
+}
+#button:hover
+{
+    background-color:dimgray;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#bordermenu
+{     
+    float: right;
+    display: flex;
+    border: none;
+}
+#menuheader
+{
+    float: left;
+    color: white;
+    list-style: none;
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+.itemheader
+{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: none;
+    border: none;
+    margin: 10px 30px 0 0;
+}
+#icon
+{
+    float: right;
+    margin: none;
+    padding: none;
+    border: none;
+    cursor: pointer;
+}
+#icon:hover
+{
+    transition: 0.5s;
+    transform:scale(1.1);
+}
+#buy
+{
+    float: right;
+    margin-right: 240px;
+    margin-top: 15px;
+    width: 18vh;
+    height: 12vh;
+    background-image: url(image//giohang.png);
+    background-size: 18vh 12vh;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+#buy:hover
+{
+    transition: 0.5s;
+    transform:scale(1.1);  
+}
+#listmenu
+{
+    float: left;
+    position: fixed;
+    margin-top: 19.2vh;
+    width: 15%;
+    height: 78vh;
+    background-color: black;
+} 
+#listmenu1
+{
+    float: left;
+    position: fixed;
+    margin-top: 21vh;
+    width: 15%;
+    height: 78vh;
+    background-color: black;
+} 
+#middle
+{
+    float: left;
+    width: 100%;
+    height: 100vh;
+}
+#right
+{   
+    float: left;
+    position: fixed;
+    top:0;
+    right: 0;
+    margin-top: 21vh;
+    width: 25%;
+    height: 78vh;
+    background-color:black;
+}
+#menu ul{
+	background-color: white;
+	width: 80%;
+	padding: 0;
+	list-style-type: none;
+	text-align:center;
+	
+	 display: block;
+  	 margin-left: auto;
+  	 margin-right: auto;
+}
+#menu li{
+	width: auto;
+	height: 90px;
+	line-height: 90px;
+	border-bottom: 20px solid black;
+	padding: 0 1em;
+    cursor: pointer;
+}
+#menu li:hover
+{
+	background:#999;
+}
+
+.innoi img{
+	transition: 0.3s;
+    border-radius: 5px;
+}
+.innoi:hover img {
+	opacity:0.1;
+}
+.innoi img:hover{
+	opacity:1;
+	transform:scale(1.1);
+}
+
+
+.border-product-all
+{
+    float: left;
+    position: relative;
+    margin-left: 305px;
+    margin-top: 19.4vh;
+    width: 58%;
+    height: auto;
+}
+.border-row
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.border-column
+{
+    margin-bottom: 20px;
+    padding-left: 14.5px;
+    padding-right: 14.5px;
+    width: 16%;
+    background-color: white;
+    margin-left: 14.5px;
+}
+.border-column:hover
+{
+    transform: scale(1.025);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.image-product
+{
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.name-product{
+    font-size: 1.4rem;
+    border: none;
+    margin: 10px 0;
+    padding: 0 50px;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: black;
+}
+.price-product
+{
+    display: flex;
+    margin-left: 10px;
+    align-items: baseline;
+}
+.price-old-product
+{
+    font-size: 1.2rem;
+    text-decoration:line-through;
+    color: black;
+}
+.price-now-product
+{
+    font-size: 1.4rem;
+    color: tomato;
+    margin-left: 10px;
+}
+.nolike
+{
+    width: 30px;
+    height: 30px;
+    background-image: url(image/NoLike.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    padding: none;
+    border: none;
+    margin: 10px 72px;
+}
+.liked
+{
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-image: url(image/Liked.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    padding: none;
+    border: none;
+    margin: 10px 72px;
+}
+.forcelike .liked{
+    display: inline-block;
+}
+.forcelike .nolike{
+    display: none;
+}
+.product{
+    position: relative;
+    background-color: white ;
+}
+.favorite{
+    position:absolute;
+    top: 10px;
+    left: -18px;
+    color: white;
+    font-size: 1.2rem;
+    background-color:tomato;
+    font-weight: 500;
+    border-radius: 0 5px 5px 0;
+    line-height: 1.6rem;
+    padding-right: 6px;
+}
+.check{
+    float: left;
+    margin: 5px 5px 0 3px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    background-image: url(image/check.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.favorite::after{
+    left: 0px;
+    position: absolute;
+    content: "";
+    border-top: 5px solid rgb(245, 79, 50);
+    border-left: 5px solid transparent;
+    bottom:-5px;
+}
+.sell-off{
+    position:absolute;
+    display:grid;
+    top:0;
+    right: -15px;
+    color: white;
+    font-size: 1.2rem;
+    background-color:yellowgreen;
+    font-weight: 500;
+    border-radius: 5px 5px 0 0;
+    line-height: 1.6rem;
+    padding: 0 2px;
+    opacity: 0.9;
+}
+.sell-off::after{
+    right: 0px;
+    position: absolute;
+    content: "";
+    border-top: 10px solid yellowgreen;
+    border-left: 25px solid transparent;
+    bottom:-8px;
+}
+.sell-off::before{
+    left: 0;
+    position: absolute;
+    content: "";
+    border-top: 10px solid yellowgreen;
+    border-right: 25px solid transparent;
+    bottom:-8px;
+}
+.percent{
+    color: red;
+    line-height: 1.6rem;
+    font-weight: 1000;
+}
+
+
+
+.wraper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+ 
+.slide_1 {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top:0;
+    z-index: 1;
+    opacity: 0;
+}
+.slide_2 {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top:0;
+    z-index: 2;
+    opacity: 0;
+}
+.slide_3 {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top:0;
+    z-index: 3;
+    opacity: 0;
+}
+.slide_4 {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top:0;
+    z-index: 4;
+    opacity: 0;
+}
+.out{
+    transition: 1.5s;
+    opacity: 1;
+}
+.page-product
+{
+    clear: both;
+    padding: none;
+    display: flex;
+    width: auto;
+    height: 40px;
+    bottom: 0;
+    margin: 0 45% 10px 45%;
+}
+.number-product
+{
+    position:relative;
+    font-size: 30px;
+    color:red;
+    border: 0;
+    padding: 0;
+    margin: 2px 17px;
+} 
+.box-number-product
+{
+    width: 50px;
+    height: 38px;
+    background-color:black;
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 0;
+}
+.underline
+{
+    text-decoration-line: underline;
+}
+/* login */
+.borderlogin{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 40px;
+    width: 300px;
+    position: fixed;
+    top: 220px;
+    left: 50%;
+    background-color: #191919;
+    text-align: center;  
+    z-index: 9000;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+.move{
+    animation: SlideInTop ease .9s;
+}
+.delete{
+    opacity: 0;
+    transform: translate(-50%,calc(-100% - 220px));
+}
+.borderlogin input[type = "text"],.borderlogin input[type = "password"],.borderlogin input[type = "number"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-size: 15px;
+}
+.borderlogin h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.borderlogin input[type = "text"]:focus,.borderlogin input[type = "password"]:focus,.borderlogin input[type = "number"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+.borderlogin input[type = "button"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;  
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.borderlogin input[type = "button"]:hover
+{
+    background: #2ecc71;
+}
+.subscribe{
+    font-family: sans-serif;
+    display: flex;
+    align-items: baseline;
+}
+.subscribe h2{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    margin-right: 5px;
+}
+.subscribe h3{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 5px;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+#close
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background-image: url(image/close.png);
+    background-size: 20px;
+    cursor: pointer;
+}
+.subscribe h3:hover
+{
+    color:darkgreen;
+    transition: 0.2s;
+}
+@keyframes SlideInTop{
+    from {
+        opacity: 0;
+        transform: translate(-50%,calc(-100% - 220px));
+    }
+    to{
+        opacity: 1;
+        transform: translate(-50%,-50%);
+    }
+}
+.phumo{
+    position: fixed;
+    inset: 0px;
+    background: rgb(130 130 130 / 27%);
+    overflow-y: scroll;
+    z-index: 1000;
+    display: block;
+}
+.phumo::before, ::after{
+    box-sizing: border-box;
+}
+
+
+/* sign up */
+.bordersignup{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 40px;
+    width: 300px;
+    position: fixed;
+    top: 260px;
+    left: 50%;
+    background-color: #191919;
+    text-align: center;  
+    z-index: 9000;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+.movesignup{
+    animation: SlideInTopSignup ease .9s;
+}
+.deletesignup{
+    opacity: 1;
+    transform: translate(-50%,calc(-100% - 260px));
+}
+.bordersignup input[type = "text"],.bordersignup input[type = "password"],.bordersignup input[type = "number"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-size: 15px;
+}
+.bordersignup h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.bordersignup input[type = "text"]:focus,.bordersignup input[type = "password"]:focus,.bordersignup input[type = "number"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+.bordersignup input[type = "button"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;  
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.bordersignup input[type = "button"]:hover
+{
+    background: #2ecc71;
+}
+@keyframes SlideInTopSignup{
+    from {
+        opacity: 0;
+        transform: translate(-50%,calc(-100% - 260px));
+    }
+    to{
+        opacity: 1;
+        transform: translate(-50%,-50%);
+    }
+}
+.PRODUCT-INTRODUCE
+{
+    float: left;
+    position: relative;
+    margin-left: 280px;
+    margin-top: 21vh;
+    width: 58%;
+    height: auto;
+}
+.testitem{
+    margin-top: 16px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    min-height: 380px;
+    line-height: 380px;
+    background-color: orange;
+}

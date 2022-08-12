@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NPT Shop</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="grid.css"> 
+        <link rel="stylesheet" type="text/css" href="build.css">        
+    <style>
+    a1{
+        font-size:36px;
+        font-family:'Times New Roman', Times, serif;
+    }
+    a2{
+        color: white;
+        font-size:50px;
+        font-style:italic;
+        font-family:"Times New Roman", Times, serif;
+    }
+    *{
+          box-sizing: border-box;
+    } 
+    </style>
+    </head>
+<body>
+<div id="NPT">
+<!-- HEADER -->
+    <div class="header">
+        <a href = "index.html"><div id="logo"></div></a>
+        <div id="bordersearch">
+            <input type="text" id="search" placeholder="Nhập sản phẩm cần tìm..."> 
+            <button type="button" id="button"><font color= "white">Tìm</font></button>
+        </div>
+        <nav id="bordermenu">
+            <ul id="menuheader">
+                <li  class="itemheader">Thông báo&nbsp;<div id="icon"><img src="image//thongbao.png" width="30px" height="30px"></div></li>        
+                <li class="itemheader">Trang chủ&nbsp;<div id="icon"><a href="index.html"><img src="image/home.png" width="30px" height="30px"></a></div></li>      
+                
+                
+                <li class="itemheader">Tài khoản&nbsp;<div onclick="showlogin()" id="icon"><img src="image//taikhoan.png" width="30px" height="30px"></div></li>                               
+            </ul>
+        </nav>
+        <div id = "buy"></div>
+    </div>  
+<!-- MIDDLE -->
+<div id="middle">
+    
+<div id = "listmenu1">
+    <div id = "menu"> 
+        <ul>   
+    <div class= "chu">
+            <li>
+                <a1>Đồ nam</a1>
+            </li>
+            
+            <li>
+                <a1>Đồ nữ</a1>
+            </li> 
+                
+            <li>
+                <a1>Đồ đôi</a1>
+            </li>
+            
+            <li>
+                <a1>Áo khoác</a1>
+            </li>
+    </div>
+        </ul>
+    </div>
+<hr width = "100%"/>
+<p align = "center"><b><a2>Thông tin liên hệ</a2></b></p>
+</br>
+<div class = "innoi">
+<p align= "center">
+<table width = "80%" height = "50px" border = "0" align = "center">
+<tr>
+<td align = "center" width = "40%"><a href = "https://www.facebook.com/profile.php?id=100012898926427" target = "blank"><img src="image/fb.jpg" width = "80%" height="50px"/></a></td>
+<td align = "center" width = "40%"><a href = "https://www.facebook.com/messages/t/100012898926427" target = "blank"><img src="image/mess.jpg" width = "80%" height="50px"/></a></td>
+</tr>
+</table>
+</p>
+</div>
+</div>
+<!-- PRODUCT -->
+<full>
+<div class ="PRODUCT-INTRODUCE">
+<div class = "grid wide">
+    <div class="row">
+        <div class="col l-5 m-5 c-12">
+            <div class="testitem">alo</div>
+        </div>
+        <div class="col l-7 m-7 c-12">
+            <div class="testitem">blo</div>
+        </div>
+    </div>
+</div>
+</div>
+</full>
+<!-- slideshow-right -->
+<div id = "right">
+<div class="wraper">
+    <div class="slide">
+        <div class="slide_1 out" style="background-image: url(https://motalo.vn/wp-content/uploads/2017/10/MPNAM12_7.jpg);">
+                
+        </div>
+        <div class="slide_2" style="background-image: url(https://cdn.kkfashion.vn/6081-large_default/chan-vay-den-chu-a-phoi-nut-cv02-20.jpg);">
+                
+        </div>
+        <div class="slide_3" style="background-image: url(https://cf.shopee.vn/file/d2d658dbb03f9dcdd57502ad0dff8367);">
+                
+        </div>
+        <div class="slide_4" style="background-image: url(https://linhvnxk.com/wp-content/uploads/2017/11/ao-khoac-gio-nam-xuat-khau-uni-mau-den.jpg);">
+                
+        </div>
+    </div>
+</div>     
+</div>
+<script type="text/javascript" src="java.js"></script>
+<p id = "show"></p>
+<!-- form login -->
+<!--go to java -->
+<div class = "test1">
+<div class = "test">
+    <div class="borderlogin delete">
+         <form class="login" action= "index.html" method="POST">
+         <div onclick="closeform()" id="close"></div>
+         <h1>Đăng nhập</h1>
+         <input type="text" name="user" placeholder="Tên đăng nhập" maxlength="24" minlength="5">
+         <input type="password" name="matkhau" placeholder="Mật khẩu" maxlength="24" minlength="5">
+         <input type="button" name="accept" value="Đăng nhập" onclick="closeform()">
+         </form>
+         <div class="subscribe">
+         <h2>Bạn chưa có tài khoản ?</h2>
+         <h3 onclick="signup()">Đăng kí ngay</h3>
+        </div>
+    </div>
+</div>
+</div>
+<!-- form login -->
+<!--go to java -->
+<div class = "test2">
+    <div class = "test">
+        <div class="bordersignup deletesignup">
+             <form class="signup" action= "index.html" method="POST">
+             <div onclick="closeformsignup()" id="close"></div>
+             <h1>Đăng kí</h1>
+             <input type="text" name="fullname" placeholder="Họ và tên" maxlength="30" minlength="6">
+             <input type="text" name="user" placeholder="Tên đăng nhập" maxlength="24" minlength="5">
+             <input type="password" name="matkhau" placeholder="Mật khẩu" maxlength="24" minlength="5">
+             <input type="number" name="user" placeholder="Số điện thoại" maxlength="10" minlength="10">
+             <input type="button" name="acceptsignup" value="Đăng kí" onclick="closeformsignup()">
+             </form>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
